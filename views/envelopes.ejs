@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">    <!--This is the CDN to connect with BootstrapCDN CSS-->
+    <!-- JS AND JQUERY -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    <meta charset="UTF-8">
+    <!-- CDN FOR ICONS CART -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- CDN MAIN CSS -->
+    <link rel="stylesheet" href="resources/css/main.css">
+    <title>Welcome to Luis' Post Office</title>
+</head>
+<body class="margin-xs">
+<%- include('parts/nav.ejs'); -%>
+<h1>Large (Envelopes)</h1>
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">Weight Not Over (oz.)</th>
+        <th scope="col"></th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>$1.00</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>$1.20</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>$1.40</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>$1.60</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>$1.80</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>$2.00</td>
+        </tr>
+        <tr>
+           <td>7</td>
+           <td>$2.20</td>
+        </tr>
+        <tr>
+           <td>8</td>
+           <td>$2.40</td>
+        </tr>
+        <tr>
+           <td>9</td>
+           <td>$2.60</td>
+        </tr>
+        <tr>
+           <td>10</td>
+           <td>$2.80</td>
+        </tr>
+        <tr>
+           <td>11</td>
+           <td>$3.00</td>
+        </tr>
+        <tr>
+           <td>12</td>
+           <td>$3.20</td>
+        </tr>
+        <tr>
+           <td>13</td>
+           <td>$3.40</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+<form method="post" action="actionletters">
+    Weight:<br>
+    <input type="text" name="number" placeholder="OZ"><br>
+    <input type="hidden" name="letter" value="Envelopes">
+    <input type="submit" value="Weight"><br>
+</form>
+</body>
+</html>

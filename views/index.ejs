@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">    <!--This is the CDN to connect with BootstrapCDN CSS-->
+    <!-- JS AND JQUERY -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    <meta charset="UTF-8">
+    <!-- CDN FOR ICONS CART -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- CDN MAIN CSS -->
+    <link rel="stylesheet" href="resources/css/main.css">
+    <title>Welcome to Luis' Post Office</title>
+</head>
+<body class="margin-xs">
+<%- include('parts/nav.ejs'); -%>
+<h1>Welcome to Luis' Post Office</h1>
+    <%
+    if(letter <= 0)
+    {
+    %>
+        <h3>Select one of the packets</h3>
+    <%
+    }
+    else
+    {
+    %>
+        You selected the option <strong><%= letter %></strong><br>
+        The Weight is <strong><%= weight %> Oz</strong><br>
+        <%
+        if(letter == "First Class Package")
+        {
+        %>
+        The Zone is <strong><%= zone %></strong><br>
+        <%
+        }
+        %>
+        The cost is <strong style="color:red"><%= cost %></strong>
+    <%
+    }
+    %>
+</body>
+</html>

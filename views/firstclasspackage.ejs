@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">    <!--This is the CDN to connect with BootstrapCDN CSS-->
+    <!-- JS AND JQUERY -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    <meta charset="UTF-8">
+    <!-- CDN FOR ICONS CART -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- CDN MAIN CSS -->
+    <link rel="stylesheet" href="resources/css/main.css">
+    <title>Welcome to Luis' Post Office</title>
+</head>
+<body class="margin-xs">
+<%- include('parts/nav.ejs'); -%>
+<h1>First-Class Package Service—Retail</h1>
+<table class="table table-hover table-condensed table-pricing row-5-border">
+    <thead>
+        <tr>
+            <th rowspan="2">Weight Not Over<br>(lbs.)</th>
+            <th colspan="8">Zone<sup>1</sup></th>
+        </tr>
+        <tr>
+            <th><br>1 &amp; 2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+            <th>6</th>
+            <th>7</th>
+            <th>8</th>
+            <th>9</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td><a href="/actionfirstclasspackage?weight=1&zone=1&price=7.50" style="cursor:pointer" data-content="DPXX0XXXXR01010">$7.50</a></td>
+            <td><a href="/actionfirstclasspackage?weight=1&zone=3&price=7.85" style="cursor:pointer" data-content="DPXX0XXXXR03010">$7.85</a></td>
+            <td><a href="/actionfirstclasspackage?weight=1&zone=4&price=8.00" style="cursor:pointer" data-content="DPXX0XXXXR04010">$8.00</a></td>
+            <td><a href="/actionfirstclasspackage?weight=1&zone=5&price=8.25" style="cursor:pointer" data-content="DPXX0XXXXR05010">$8.25</a></td>
+            <td><a href="/actionfirstclasspackage?weight=1&zone=6&price=8.45" style="cursor:pointer" data-content="DPXX0XXXXR06010">$8.45</a></td>
+            <td><a href="/actionfirstclasspackage?weight=1&zone=7&price=8.85" style="cursor:pointer" data-content="DPXX0XXXXR07010">$8.85</a></td>
+            <td><a href="/actionfirstclasspackage?weight=1&zone=8&price=9.60" style="cursor:pointer" data-content="DPXX0XXXXR08010">$9.60</a></td>
+            <td><a href="/actionfirstclasspackage?weight=1&zone=9&price=14.05" style="cursor:pointer" data-content="DPXX0XXXXR09010">$14.05</a></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><a href="/actionfirstclasspackage?weight=2&zone=1&price=8.25" style="cursor:pointer" data-content="DPXX0XXXXR01020">8.25</a></td>
+            <td><a href="/actionfirstclasspackage?weight=2&zone=3&price=8.70" style="cursor:pointer" data-content="DPXX0XXXXR03020">8.70</a></td>
+            <td><a href="/actionfirstclasspackage?weight=2&zone=4&price=9.90" style="cursor:pointer" data-content="DPXX0XXXXR04020">9.90</a></td>
+            <td><a href="/actionfirstclasspackage?weight=2&zone=5&price=10.90" style="cursor:pointer" data-content="DPXX0XXXXR05020">10.90</a></td>
+            <td><a href="/actionfirstclasspackage?weight=2&zone=6&price=11.75" style="cursor:pointer" data-content="DPXX0XXXXR06020">11.75</a></td>
+            <td><a href="/actionfirstclasspackage?weight=2&zone=7&price=13.65" style="cursor:pointer" data-content="DPXX0XXXXR07020">13.65</a></td>
+            <td><a href="/actionfirstclasspackage?weight=2&zone=8&price=14.90" style="cursor:pointer" data-content="DPXX0XXXXR08020">14.90</a></td>
+            <td><a href="/actionfirstclasspackage?weight=2&zone=9&price=22.30" style="cursor:pointer" data-content="DPXX0XXXXR09020">22.30</a></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><a href="/actionfirstclasspackage?weight=3&zone=1&price=8.70" style="cursor:pointer" data-content="DPXX0XXXXR01030">8.70</a></td>
+            <td><a href="/actionfirstclasspackage?weight=3&zone=3&price=9.70" style="cursor:pointer" data-content="DPXX0XXXXR03030">9.70</a></td>
+            <td><a href="/actionfirstclasspackage?weight=3&zone=4&price=10.90" style="cursor:pointer" data-content="DPXX0XXXXR04030">10.90</a></td>
+            <td><a href="/actionfirstclasspackage?weight=3&zone=5&price=12.55" style="cursor:pointer" data-content="DPXX0XXXXR05030">12.55</a></td>
+            <td><a href="/actionfirstclasspackage?weight=3&zone=6&price=13.25" style="cursor:pointer" data-content="DPXX0XXXXR06030">13.25</a></td>
+            <td><a href="/actionfirstclasspackage?weight=3&zone=7&price=16.90" style="cursor:pointer" data-content="DPXX0XXXXR07030">16.90</a></td>
+            <td><a href="/actionfirstclasspackage?weight=3&zone=8&price=20.00" style="cursor:pointer" data-content="DPXX0XXXXR08030">20.00</a></td>
+            <td><a href="/actionfirstclasspackage?weight=3&zone=9&price=29.85" style="cursor:pointer" data-content="DPXX0XXXXR09030">29.85</a></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><a href="/actionfirstclasspackage?weight=4&zone=1&price=9.20" style="cursor:pointer" data-content="DPXX0XXXXR01040">9.20</a></td>
+            <td><a href="/actionfirstclasspackage?weight=4&zone=3&price=10.55" style="cursor:pointer" data-content="DPXX0XXXXR03040">10.55</a></td>
+            <td><a href="/actionfirstclasspackage?weight=4&zone=4&price=11.55" style="cursor:pointer" data-content="DPXX0XXXXR04040">11.55</a></td>
+            <td><a href="/actionfirstclasspackage?weight=4&zone=5&price=13.95" style="cursor:pointer" data-content="DPXX0XXXXR05040">13.95</a></td>
+            <td><a href="/actionfirstclasspackage?weight=4&zone=6&price=17.25" style="cursor:pointer" data-content="DPXX0XXXXR06040">17.25</a></td>
+            <td><a href="/actionfirstclasspackage?weight=4&zone=7&price=20.80" style="cursor:pointer" data-content="DPXX0XXXXR07040">20.80</a></td>
+            <td><a href="/actionfirstclasspackage?weight=4&zone=8&price=23.15" style="cursor:pointer" data-content="DPXX0XXXXR08040">23.15</a></td>
+            <td><a href="/actionfirstclasspackage?weight=4&zone=9&price=34.55" style="cursor:pointer" data-content="DPXX0XXXXR09040">34.55</a></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><a href="/actionfirstclasspackage?weight=5&zone=1&price=10.20" style="cursor:pointer" data-content="DPXX0XXXXR01050">10.20</a></td>
+            <td><a href="/actionfirstclasspackage?weight=5&zone=3&price=11.30" style="cursor:pointer" data-content="DPXX0XXXXR03050">11.30</a></td>
+            <td><a href="/actionfirstclasspackage?weight=5&zone=4&price=12.25" style="cursor:pointer" data-content="DPXX0XXXXR04050">12.25</a></td>
+            <td><a href="/actionfirstclasspackage?weight=5&zone=5&price=14.40" style="cursor:pointer" data-content="DPXX0XXXXR05050">14.40</a></td>
+            <td><a href="/actionfirstclasspackage?weight=5&zone=6&price=19.65" style="cursor:pointer" data-content="DPXX0XXXXR06050">19.65</a></td>
+            <td><a href="/actionfirstclasspackage?weight=5&zone=7&price=23.85" style="cursor:pointer" data-content="DPXX0XXXXR07050">23.85</a></td>
+            <td><a href="/actionfirstclasspackage?weight=5&zone=8&price=26.70" style="cursor:pointer" data-content="DPXX0XXXXR08050">26.70</a></td>
+            <td><a href="/actionfirstclasspackage?weight=5&zone=9&price=40.00" style="cursor:pointer" data-content="DPXX0XXXXR09050">40.00</a></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td><a href="/actionfirstclasspackage?weight=6&zone=1&price=10.95" style="cursor:pointer" data-content="DPXX0XXXXR01060">10.95</a></td>
+            <td><a href="/actionfirstclasspackage?weight=6&zone=3&price=11.55" style="cursor:pointer" data-content="DPXX0XXXXR03060">11.55</a></td>
+            <td><a href="/actionfirstclasspackage?weight=6&zone=4&price=12.80" style="cursor:pointer" data-content="DPXX0XXXXR04060">12.80</a></td>
+            <td><a href="/actionfirstclasspackage?weight=6&zone=5&price=15.70" style="cursor:pointer" data-content="DPXX0XXXXR05060">15.70</a></td>
+            <td><a href="/actionfirstclasspackage?weight=6&zone=6&price=21.85" style="cursor:pointer" data-content="DPXX0XXXXR06060">21.85</a></td>
+            <td><a href="/actionfirstclasspackage?weight=6&zone=7&price=25.90" style="cursor:pointer" data-content="DPXX0XXXXR07060">25.90</a></td>
+            <td><a href="/actionfirstclasspackage?weight=6&zone=8&price=29.20" style="cursor:pointer" data-content="DPXX0XXXXR08060">29.20</a></td>
+            <td><a href="/actionfirstclasspackage?weight=6&zone=9&price=45.15" style="cursor:pointer" data-content="DPXX0XXXXR09060">45.15</a></td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td><a href="/actionfirstclasspackage?weight=7&zone=1&price=11.95" style="cursor:pointer" data-content="DPXX0XXXXR01070">11.95</a></td>
+            <td><a href="/actionfirstclasspackage?weight=7&zone=3&price=13.10" style="cursor:pointer" data-content="DPXX0XXXXR03070">13.10</a></td>
+            <td><a href="/actionfirstclasspackage?weight=7&zone=4&price=15.40" style="cursor:pointer" data-content="DPXX0XXXXR04070">15.40</a></td>
+            <td><a href="/actionfirstclasspackage?weight=7&zone=5&price=18.95" style="cursor:pointer" data-content="DPXX0XXXXR05070">18.95</a></td>
+            <td><a href="/actionfirstclasspackage?weight=7&zone=6&price=24.20" style="cursor:pointer" data-content="DPXX0XXXXR06070">24.20</a></td>
+            <td><a href="/actionfirstclasspackage?weight=7&zone=7&price=28.95" style="cursor:pointer" data-content="DPXX0XXXXR07070">28.95</a></td>
+            <td><a href="/actionfirstclasspackage?weight=7&zone=8&price=32.85" style="cursor:pointer" data-content="DPXX0XXXXR08070">32.85</a></td>
+            <td><a href="/actionfirstclasspackage?weight=7&zone=9&price=50.75" style="cursor:pointer" data-content="DPXX0XXXXR09070">50.75</a></td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td><a href="/actionfirstclasspackage?weight=8&zone=1&price=12.30" style="cursor:pointer" data-content="DPXX0XXXXR01080">12.30</a></td>
+            <td><a href="/actionfirstclasspackage?weight=8&zone=3&price=14.50" style="cursor:pointer" data-content="DPXX0XXXXR03080">14.50</a></td>
+            <td><a href="/actionfirstclasspackage?weight=8&zone=4&price=17.10" style="cursor:pointer" data-content="DPXX0XXXXR04080">17.10</a></td>
+            <td><a href="/actionfirstclasspackage?weight=8&zone=5&price=22.55" style="cursor:pointer" data-content="DPXX0XXXXR05080">22.55</a></td>
+            <td><a href="/actionfirstclasspackage?weight=8&zone=6&price=27.45" style="cursor:pointer" data-content="DPXX0XXXXR06080">27.45</a></td>
+            <td><a href="/actionfirstclasspackage?weight=8&zone=7&price=32.15" style="cursor:pointer" data-content="DPXX0XXXXR07080">32.15</a></td>
+            <td><a href="/actionfirstclasspackage?weight=8&zone=8&price=36.75" style="cursor:pointer" data-content="DPXX0XXXXR08080">36.75</a></td>
+            <td><a href="/actionfirstclasspackage?weight=8&zone=9&price=56.80" style="cursor:pointer" data-content="DPXX0XXXXR09080">56.80</a></td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td><a href="/actionfirstclasspackage?weight=9&zone=1&price=12.80" style="cursor:pointer" data-content="DPXX0XXXXR01090">12.80</a></td>
+            <td><a href="/actionfirstclasspackage?weight=9&zone=3&price=15.65" style="cursor:pointer" data-content="DPXX0XXXXR03090">15.65</a></td>
+            <td><a href="/actionfirstclasspackage?weight=9&zone=4&price=18.95" style="cursor:pointer" data-content="DPXX0XXXXR04090">18.95</a></td>
+            <td><a href="/actionfirstclasspackage?weight=9&zone=5&price=25.75" style="cursor:pointer" data-content="DPXX0XXXXR05090">25.75</a></td>
+            <td><a href="/actionfirstclasspackage?weight=9&zone=6&price=29.85" style="cursor:pointer" data-content="DPXX0XXXXR06090">29.85</a></td>
+            <td><a href="/actionfirstclasspackage?weight=9&zone=7&price=34.70" style="cursor:pointer" data-content="DPXX0XXXXR07090">34.70</a></td>
+            <td><a href="/actionfirstclasspackage?weight=9&zone=8&price=40.90" style="cursor:pointer" data-content="DPXX0XXXXR08090">40.90</a></td>
+            <td><a href="/actionfirstclasspackage?weight=9&zone=9&price=63.20" style="cursor:pointer" data-content="DPXX0XXXXR09090">63.20</a></td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>
