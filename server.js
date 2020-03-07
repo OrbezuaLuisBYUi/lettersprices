@@ -33,7 +33,7 @@ app.set('views', __dirname + '/views');
 //Indicamos el tipo de motor de plantillas a utilizar, en nuestro caso EJS
 app.set('view engine', 'ejs');
 //Definimos una variable con el puerto
-var port = normalizePort(process.env.PORT || '3000');
+var port = process.env.PORT || 3000;
 app.set('port', port);
 
 //Middleweres (Funciones o peticiones que se inician, luego se procesan y finalmente entregan un resultado)
